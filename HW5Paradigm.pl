@@ -1,5 +1,6 @@
 sum_list([], 0).
-sum_list([X | Xs], Result) :-
-    sum_list(Xs, Rest),
-    Result is X + Rest.
+sum_list([X | Xs], Sum) :-
+    sum_list(Xs, IntReslt),
+    Sum is X + IntReslt.
+
 
